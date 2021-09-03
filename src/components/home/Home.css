@@ -4,7 +4,6 @@ html{
 
 *{
     font-family: 'Baloo 2', cursive;
-    overflow: hidden;
 }
 
 .logo {
@@ -107,7 +106,7 @@ html{
 }
   
 .c1{
-    height: 108%;
+    height: 15rem;
     overflow: hidden;
 }
   /* Sidebar links */
@@ -204,23 +203,22 @@ input[type="file"] {
 
 /*POSTAGEM*/
 .post{
-    background-color: #3B4044;
+    background: linear-gradient(to bottom, #3b4044 0%, #53595f 100%);
     width: 60vw;
-    height: 17rem;
-    margin-top: 211px;
+    height: relative;
+    margin-top: 15rem;
     margin-left: 16rem;
     border-radius: 5px;
 }
 
 #post1{
-    background-color: #74A8B4;
+    background: linear-gradient(to right, #74a8b4 0%, #7fc1cf 100%);
 }
 
 /*IMAGEM PERFIL POSTAGEM*/
 .posic{
     border: 10rem;
     padding: 0.6rem 0rem 0.2rem 0.1rem;
-    margin-top: 1.2rem;
     margin-left: 1rem;
 }
 
@@ -228,8 +226,8 @@ input[type="file"] {
     float: left;
     background-color: #aaa;
     border-radius: 50%;
-    width: 5%;
-    height: 5%;
+    width: 3.1rem;
+    height: 3.1rem;
     overflow: hidden;
     position: relative;
 }
@@ -239,7 +237,11 @@ input[type="file"] {
     bottom: 0;
     width: 100%;
 }
-
+.conteudoPost{
+    margin-bottom: 0.5rem;
+    color:#f6f5f5;
+    text-align: justify;
+}
 /*@media only screen and (max-width: 700px) {
     .circlePerfil{
         float: left;
@@ -254,14 +256,19 @@ input[type="file"] {
 /*NICKNAME*/
 #nick{
     color: #ffffff;
-    font-family: 'Lucida Sans';
-    margin-top: 1rem;
+    font-size: 20px;
+    margin-left: 4rem;
+}
+
+#nickDesc{
+    color: #ebebeb;
+    font-size: 14px;
     margin-left: 4rem;
 }
 
 /*Hr User*/
 #hrUser{
-    margin-top: 1.9rem;
+    margin-bottom: 0.1rem;
     border-color: transparent;
     box-shadow: 3px 4px 4px black;
 }
@@ -269,6 +276,86 @@ input[type="file"] {
 
 /*Time Post*/
 #timePost{
-    margin-top: 1rem;
+    margin: 0.3rem;
+    margin-left: 1rem;
     color: rgb(209, 209, 209);
+}
+
+/*Alinhamento*/
+.alinha{
+    margin: 1rem;
+    padding-bottom: 1.2rem;
+}
+
+.titulo{
+    color: #94d5e4;
+}
+
+/*TEMAS*/
+#TemaP{
+    margin-top: 0.9rem;
+    font-size: 13px;
+}
+
+.badge{
+    margin-right: 0.6rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    border-color: black;
+    background-color: cornflowerblue;
+    box-shadow: 1px 1px 1px black;
+
+}
+
+/*BOTOES DE INTERAÇÃO*/
+
+.botoes{
+    margin-bottom: 22rem;
+}
+
+.buttonL{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px #36383a;
+}
+
+.buttonL:hover{
+    background-color: #dddddd;
+    border: none;
+    color: #008CBA;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #2e3031;
+}
+
+.qtdLikes{
+    margin-top: -350px;
+}
+
+ul {
+    list-style: none;
+    display:inline-block;
+}
+
+.botoes img{
+    width: 2rem;
 }
