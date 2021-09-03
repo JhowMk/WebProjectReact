@@ -1,3 +1,16 @@
+html{
+    background-color: #0D1418;
+}
+
+*{
+    font-family: 'Baloo 2', cursive;
+    overflow: hidden;
+}
+
+.logo {
+    float:left;
+}
+
 .c2{
     background-color: #f1f1f1;
     height: 116vh;
@@ -30,7 +43,7 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #3B4044;
   overflow: hidden;
 }
 
@@ -42,22 +55,38 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  height: 28px;
 }
+
 .textnav{
-    float: right;
+    float: right;  
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+  text-decoration: none;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #74a8b4;
   color: white;
-  width: 12.5rem;
+  width: 8rem;
+  height: 28px;
+  font-family: 'Leckerli One', cursive;
+  font-size: 100%;
+  text-shadow: rgb(81, 112, 121) 1px 1px 1px;
+  
+  
+}
+
+.mh{
+    font-family: 'Leckerli One', cursive;
+    font-size: 100%;
+    text-shadow: rgb(88, 122, 131) 1px 1px 1px;
+    margin-top: -7px;
 }
 
 
@@ -71,21 +100,23 @@
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 14.5rem;
-    background-color: #333;
     position: absolute;
     overflow: auto;
-}
-.c1{
-    height: 116%;
+    padding-top: rem;
+    padding-left: 1rem;
 }
   
+.c1{
+    height: 108%;
+    overflow: hidden;
+}
   /* Sidebar links */
 .sidebar a {
     display: block;
     color: white;
     padding: 16px;
     text-decoration: none;
+    border-bottom: 1px solid #ddd;
 }
   
 /* Active/current link */
@@ -96,10 +127,13 @@
   
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
 }
-  
+
+
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 .content {
     margin-left: 200px;
@@ -168,3 +202,73 @@ input[type="file"] {
 }
 
 
+/*POSTAGEM*/
+.post{
+    background-color: #3B4044;
+    width: 60vw;
+    height: 17rem;
+    margin-top: 211px;
+    margin-left: 16rem;
+    border-radius: 5px;
+}
+
+#post1{
+    background-color: #74A8B4;
+}
+
+/*IMAGEM PERFIL POSTAGEM*/
+.posic{
+    border: 10rem;
+    padding: 0.6rem 0rem 0.2rem 0.1rem;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+
+.circlePerfil {
+    float: left;
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+    overflow: hidden;
+    position: relative;
+}
+  
+.circle img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*@media only screen and (max-width: 700px) {
+    .circlePerfil{
+        float: left;
+        background-color: #aaa;
+        border-radius: 50%;
+        width: 7%;
+        height: 7%;
+        overflow: hidden;
+        position: relative;
+    }
+}*/
+/*NICKNAME*/
+#nick{
+    color: #ffffff;
+    font-family: 'Lucida Sans';
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+/*Hr User*/
+#hrUser{
+    margin-top: 1.9rem;
+    border-color: transparent;
+    box-shadow: 3px 4px 4px black;
+}
+
+
+/*Time Post*/
+#timePost{
+    margin-top: 1rem;
+    color: rgb(209, 209, 209);
+}
