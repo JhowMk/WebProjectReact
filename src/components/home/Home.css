@@ -173,23 +173,6 @@ input[type="file"] {
     border-radius: 5px;
 }
 
-/*Curtir*/
-
-/*#botao {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/df/Facebook_logo_thumbs_up_like_transparent_SVG.svg);
-    background-color: #e7e9f1;
-    color: #385596;
-    background-size: 50px;
-    background-position: 20px 25%;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 59px;
-    font-size: 20px;
-    border: 1px solid #a8b4c9;
-    text-align: center;
-    text-indent: 32px;
-}*/
-
 /*DENTRO DO EDIT POST*/
 .file{
     float: left;
@@ -206,7 +189,7 @@ input[type="file"] {
     background: linear-gradient(to bottom, #3b4044 0%, #53595f 100%);
     width: 60vw;
     height: relative;
-    margin-top: 15rem;
+    margin-top: 1rem;
     margin-left: 16rem;
     border-radius: 5px;
 }
@@ -242,17 +225,7 @@ input[type="file"] {
     color:#f6f5f5;
     text-align: justify;
 }
-/*@media only screen and (max-width: 700px) {
-    .circlePerfil{
-        float: left;
-        background-color: #aaa;
-        border-radius: 50%;
-        width: 7%;
-        height: 7%;
-        overflow: hidden;
-        position: relative;
-    }
-}*/
+
 /*NICKNAME*/
 #nick{
     color: #ffffff;
@@ -277,7 +250,7 @@ input[type="file"] {
 /*Time Post*/
 #timePost{
     margin: 0.3rem;
-    margin-left: 1rem;
+    margin-right: 1.5rem;
     color: rgb(209, 209, 209);
 }
 
@@ -317,7 +290,7 @@ input[type="file"] {
     background-color: #008CBA;
     border: none;
     color: white;
-    padding: 0.3rem 1rem;
+    padding: 0.1rem 0.5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -328,6 +301,7 @@ input[type="file"] {
     border-radius: 5px;
     font-weight: bold;
     box-shadow: 2px 2px 4px #36383a;
+    height: 2.6rem;
 }
 
 .buttonL:hover{
@@ -335,7 +309,7 @@ input[type="file"] {
     border: none;
     color: #008CBA;
     font-weight: bold;
-    padding: 0.3rem 1rem;
+    padding: 0.1rem 0.5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -345,6 +319,7 @@ input[type="file"] {
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 2px 2px 4px #2e3031;
+    height: 2.6rem;
 }
 
 .qtdLikes{
@@ -357,5 +332,82 @@ ul {
 }
 
 .botoes img{
-    width: 2rem;
+    width: 1.5rem;
+}
+
+#comment {
+    margin-top: 5px;
+}
+
+/*NEW POST*/
+
+.NewPost{
+    background: linear-gradient(to bottom, #3b4044 0%, #53595f 100%);
+    width: 60vw;
+    height: relative;
+    margin-top: 1.2rem;
+    margin-left: 16rem;
+    border-radius: 5px;
+}
+
+#NewP1{
+    background: linear-gradient(to right, #74a8b4 0%, #7fc1cf 100%);
+}
+
+/*Texto*/
+
+.textP{
+    padding: 1rem;
+}
+
+/*HR - DIVISA POST*/
+    
+#divisao{
+    margin-top: 1.2rem;
+    margin-left: 25.9rem;
+    width: 40rem;
+    opacity: 0.8;
+    box-shadow: 2px 2px 2px rgb(50, 164, 184);
+}
+
+/*TITULO - NEW POST*/
+
+.form-control{
+    width: 100%;
+}
+
+/*Enviar Arquivos*/
+.form-group{
+    margin-bottom: 1.3rem;
+    color: white;
+}
+.control-label{
+    border: none;
+    background-color: #0080f8;
+
+}
+.control-label:hover{
+    border:none;
+    background-color: #dddddd;
+    color: #008CBA;
+}
+/*Anexo Img - Enviar Arquivos*/
+#anexoImg{
+    width: 3rem;
+    height: 3rem;
+}
+
+/*TEMAS*/
+.temas{
+    margin-top: 1rem;
+    margin-bottom: 1.7rem;
+}
+
+/*Privacidade*/
+
+.privacidade{
+    float:right;
+}
+#enviar{
+    margin-top: 2rem;
 }

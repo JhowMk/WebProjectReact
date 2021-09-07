@@ -1,13 +1,25 @@
-import React from 'react'
+import React, {useState}from 'react'
 import {} from 'react-bootstrap'
 import './Home.css'
 import logo from '../img/Logo1.png'
 import like from '../img/Like.png'
 import comment from '../img/comment.png'
 import share from '../img/share.png'
+import attachment from '../img/anexo.png'
 
 export default function Home() {
 
+    const [qtdLike, setQtdLike] = useState(13);
+
+    const adicionarLike = () => {
+        if (qtdLike === 13){
+            setQtdLike(qtdLike+1);
+        }
+        else{
+            setQtdLike(qtdLike-1);
+        }
+    }
+    
    return(
        <>
        {/* Navbar */}
@@ -31,54 +43,96 @@ export default function Home() {
             <a href="./menu-lateral/configs.html">Configurações</a>
         </div>
 
-        <div className="post">
-            <div id="post1">
-                <div className="posic post1">
-                    <img className="circlePerfil" src="https://i.picsum.photos/id/890/50/50.jpg?hmac=WoIS0wOCaG-A7OL-94AQUibTMCPw1faVXwktGYCgLO4" alt=""></img>
-                    <p id="nick">@Oincrivelm</p>
-                    <p id="nickDesc">Salve salve rapaziada</p>
+
+        <div className="NewPost">
+            <div id="NewP1">
+                <div className="posit posit1">
+                    
+                    <h3 className="textP">Nova Publicação</h3>
                 </div>
                 <hr id="hrUser"></hr>
             </div>
 
             <div>
-                <p id="timePost">10 min ago</p>
-
                 <div className="alinha">
-                    <h1 className="titulo">Titulando algo bem titulado</h1>
-                    <p className="conteudoPost">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Curabitur rhoncus nibh nec nisl condimentum varius. 
-                     Cras dapibus pharetra consequat. Mauris pharetra lacinia nisi,
-                      vel facilisis eros. Sed non dictum turpis. In interdum turpis
-                       ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nulla elementum hendrerit sem non tempor. Praesent gravida aliquet 
-                        tortor, sit amet condimentum libero venenatis eget. Suspendisse ut 
-                        magna condimentum arcu dictum bibendum. Aenean et libero et metus 
-                        tristique sollicitudin. Etiam ac sodales justo.</p>
+
+                    <div>
+                        <h2 className="titulo">Titulo</h2>
+                        <div><textarea className="form-control" id="message-text"></textarea></div>
+                    </div>
+
+                    <div>
+                        <h2 className="titulo">Publicação:</h2>
+                        <div><textarea className="form-control" id="message" rows="5" placeholder="O que você quer compartilhar hoje?"></textarea></div>
+                    </div>
+                    
+                    {/* <!--TEMAS SELECIONADOS--> */}
+                            <div className="temas"> 
+                                <select id="genero" name="select">
+                                    <option value="sel">Selecione um tema</option>
+                                    <option value="ans">Ansiedade</option>
+                                    <option value="sup">Superação</option>
+                                    <option value="conq">Conquistas</option>
+                                    <option value="rel">Relatos</option>
+                                    <option value="dicas">Dicas</option>
+                                  </select>
+                            </div>
+                                                    
+                            <div className="form-group">
+                                <label for="fupload" className="control-label label-bordered"> Enviar Arquivos</label>
+                                
+                                <input type="file" id="fupload" name="fupload" className="fupload form-control" />
+                            </div>
+                            <div className="btn-toolbar justify-content-between">
+                    
+                        <div className="privacidade"> 
+                            <select id="privac" name="opcao">
+                                <option value="ans">Público</option>
+                                <option value="sup">Amigos</option>
+                                <option value="conq">Apenas Eu</option>
+                                </select>
+                        </div>
+                        <div className="btn-group">
+                            <button type="submit" className="buttonL" id="enviar">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr id="divisao"></hr>
+        <div className="post">
+            <div id="post1">
+                <div className="posic post1">
+                    <img className="circlePerfil" src="https://i.picsum.photos/id/890/50/50.jpg?hmac=WoIS0wOCaG-A7OL-94AQUibTMCPw1faVXwktGYCgLO4" alt=""></img>
+                    <p id="nick">@michelemelo</p>
+                    <p id="nickDesc">32 anos, São Paulo</p>
+                </div>
+                <hr id="hrUser"></hr>
+            </div>
+
+            <div>
+                <div className="alinha">
+                    <p id="timePost">10 min ago</p>
+                    <h1 className="titulo">Fato que aprendi sobre a ansiedade</h1>
+                    <p className="conteudoPost">Aprendi por experiência própria que você não deixa de ser ansioso de uma hora para a outra, mas você consegue lidar com mais tranquilidade com as coisas, focar mais, e lidar com mais naturalidade com as coisas que acontecem. Pensando nisso, tenho lidado e superado a ansiedade um pouco a cada dia.</p>
                     
                     {/*Temas Escolhidos*/}
                     <div id="TemaP">
-                        <span class="badge badge-primary">EU SOU FELIZ</span>
-                        <span class="badge badge-primary">EU SOU INCRIVEL</span>
-                        <span class="badge badge-primary">Outros</span>
+                        <span class="badge badge-primary">Superação</span>
+                        <span class="badge badge-primary">Ansiedade</span>
+                        <span class="badge badge-primary">Relatos</span>
                     </div>
                 </div>
 
-
-
-                {/*interacoes - like*/}
+                {/*Interações - like*/}
                 <div className="botoes">
-                    <button class="buttonL"><img src={like} alt="likes"/></button>
-                    <button class="buttonL"><img src={comment} alt="comment"/></button>
+                    <button class="buttonL" onClick={() => { adicionarLike() }}>
+                    <img src={like} alt="likes"/>
+                     {qtdLike}</button>
+                    <button class="buttonL"><img src={comment} alt="comment" id="comment"/></button>
                     <button class="buttonL"><img src={share} alt="share"/></button>
-                </div> 
-                
-
-
+                </div>
             </div>
-
         </div>
-
-
     </>
 )}
