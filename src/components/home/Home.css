@@ -509,3 +509,12 @@ option{
     }
 
 }
+
+footer{
+    text-align: center;
+    background-color: #3B4044;
+    opacity: 0.8;
+    color:#ddd;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}

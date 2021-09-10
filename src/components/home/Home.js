@@ -131,6 +131,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
+        <footer>
+            <p>Mental Health  &copy; 2021</p>
+        </footer>
     </>
 )}
