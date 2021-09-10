@@ -8,6 +8,8 @@ html{
 
 .logo {
     float:left;
+    width: 1.9rem;
+    height: 1.9rem; 
 }
 
 .c2{
@@ -78,7 +80,6 @@ html{
   font-size: 100%;
   text-shadow: rgb(81, 112, 121) 1px 1px 1px;
   
-  
 }
 
 .mh{
@@ -119,7 +120,7 @@ html{
 }
   
 /* Active/current link */
-.sidebar a.active {
+.sidebar a.actsive {
     background-color: #9b20ccd2;
     color: white;
 }
@@ -137,25 +138,6 @@ html{
 .content {
     margin-left: 200px;
     padding: 1px 16px;
-}
-  
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-}
-  
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
 }
 
 /*TEMAS, UPLOAD- POSTAGEM*/
@@ -185,6 +167,7 @@ input[type="file"] {
 
 
 /*POSTAGEM*/
+
 .post{
     background: linear-gradient(to bottom, #3b4044 0%, #53595f 100%);
     width: 60vw;
@@ -196,6 +179,8 @@ input[type="file"] {
 
 #post1{
     background: linear-gradient(to right, #74a8b4 0%, #7fc1cf 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /*IMAGEM PERFIL POSTAGEM*/
@@ -347,10 +332,13 @@ ul {
     margin-top: 1.2rem;
     margin-left: 16rem;
     border-radius: 5px;
+
 }
 
 #NewP1{
     background: linear-gradient(to right, #74a8b4 0%, #7fc1cf 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /*Texto*/
@@ -358,7 +346,7 @@ ul {
 .textP{
     padding: 1rem;
     color: #f2f2f2;
-   
+    
 }
 
 /*HR - DIVISA POST*/
@@ -430,7 +418,7 @@ ul {
     margin-top: 10px;
 }
 
-#genero {
+#tema {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -452,4 +440,72 @@ ul {
 
 option{
     background-color: #a5a5a5;
+}
+
+@media screen and (max-width: 700px) {
+
+   
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 611px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      /* .sidebar a {float: left;}
+      div.content {margin-left: 0;} */
+
+    .c1{
+        padding-left: 0px;
+        width: 100%;
+        display:flex;
+        border-bottom: 1px solid #ddd;
+    }
+    .sidebar a {
+      border: none;
+    }
+
+    .textnav{
+        display: flex;
+        float:left;
+    }
+
+    .topnav a.active{
+        padding: none;
+        width: 100%;
+        align-items: right;
+    }
+
+    .mh{
+        font-size: 2rem;
+    }
+    .logo{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /*
+    .Conteudo{
+        margin-right: 250rem;
+    }
+    
+    
+    .post{
+        display: flex;
+        align-items: center;
+
+    }*/
+
+    .NewPost{
+        margin-left: 2.5%;
+        width: 95%;
+    }
+
+    .post{
+        margin-left: 2.5%;
+        width: 95%;
+    }
+
 }
