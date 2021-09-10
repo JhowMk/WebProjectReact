@@ -272,18 +272,17 @@ input[type="file"] {
 
 .badge{
     margin-right: 0.6rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.03rem 0.5rem;
     border-radius: 10px;
     border-color: black;
-    background-color: cornflowerblue;
+    background-color: #94d5e4;
     box-shadow: 1px 1px 1px black;
-
 }
 
 /*BOTOES DE INTERAÇÃO*/
 
 .botoes{
-    margin-bottom: 22rem;
+    margin-bottom: 1rem;
 }
 
 .buttonL{
@@ -358,6 +357,8 @@ ul {
 
 .textP{
     padding: 1rem;
+    color: #f2f2f2;
+   
 }
 
 /*HR - DIVISA POST*/
@@ -374,6 +375,10 @@ ul {
 
 .form-control{
     width: 100%;
+    border-radius: 5px;
+    border: 3px solid #3B4044;   
+    background-color: #CCCCCC;
+    
 }
 
 /*Enviar Arquivos*/
@@ -383,13 +388,17 @@ ul {
 }
 .control-label{
     border: none;
-    background-color: #0080f8;
+    background-color: #008CBA;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px #36383a;
 
 }
 .control-label:hover{
     border:none;
     background-color: #dddddd;
     color: #008CBA;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #2e3031;
 }
 /*Anexo Img - Enviar Arquivos*/
 #anexoImg{
@@ -410,4 +419,37 @@ ul {
 }
 #enviar{
     margin-top: 2rem;
+    padding:0.1rem 0.2rem;
+}
+#anexar{
+    padding:0.3rem;
+}
+
+.comentarios{
+    color:white;
+    margin-top: 10px;
+}
+
+#genero {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #CCCCCC;
+    padding-left:5px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+#privac {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #CCCCCC;
+    padding-left:5px;
+    width: 72px;
+    border-radius: 5px;
+}
+
+option{
+    background-color: #a5a5a5;
 }

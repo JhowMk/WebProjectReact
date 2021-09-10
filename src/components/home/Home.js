@@ -57,13 +57,11 @@ export default function Home() {
                 <div className="alinha">
 
                     <div>
-                        <h2 className="titulo">Titulo</h2>
-                        <div><textarea className="form-control" id="message-text"></textarea></div>
+                        <div><textarea className="form-control" id="message-text" placeholder="  Adicione um título para sua publicação"></textarea></div>
                     </div>
 
                     <div>
-                        <h2 className="titulo">Publicação:</h2>
-                        <div><textarea className="form-control" id="message" rows="5" placeholder="O que você quer compartilhar hoje?"></textarea></div>
+                        <div><textarea className="form-control" id="message" rows="5" placeholder="  O que você quer compartilhar hoje?"></textarea></div>
                     </div>
                     
                     {/* <!--TEMAS SELECIONADOS--> */}
@@ -79,7 +77,7 @@ export default function Home() {
                             </div>
                                                     
                             <div className="form-group">
-                                <label for="fupload" className="control-label label-bordered"> Enviar Arquivos</label>
+                                <label for="fupload" className="control-label label-bordered" id="anexar"> Enviar Arquivos</label>
                                 
                                 <input type="file" id="fupload" name="fupload" className="fupload form-control" />
                             </div>
@@ -90,10 +88,10 @@ export default function Home() {
                                 <option value="ans">Público</option>
                                 <option value="sup">Amigos</option>
                                 <option value="conq">Apenas Eu</option>
-                                </select>
+                            </select>
                         </div>
                         <div className="btn-group">
-                            <button type="submit" className="buttonL" id="enviar">Enviar</button>
+                            <button type="submit" className="buttonL" id="enviar">Publicar</button>
                         </div>
                     </div>
                 </div>
